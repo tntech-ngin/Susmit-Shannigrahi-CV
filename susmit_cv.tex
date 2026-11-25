@@ -1,0 +1,216 @@
+\documentclass[11pt, letterpaper]{article}
+
+% include data on fonts
+
+\usepackage[combine]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{lastpage}
+\usepackage{bibentry}
+\usepackage[nomessages]{fp}
+\usepackage{siunitx}
+\usepackage{etaremune}
+\usepackage{longtable}
+
+\usepackage{textcomp}
+\renewcommand{\rmdefault}{ugm}
+\renewcommand{\sfdefault}{phv}
+
+
+\usepackage[letterpaper,left=1.75in,right=1.2in,top=1.2in,bottom=1in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+%\usepackage{garamond}
+
+% Metadata -- alter as neded
+\def\myemail{sshannigrahi@tntech.edu}
+\def\myweb{https://susm.it}
+\def\groupweb{https://tntech-ngin.net}
+
+
+\def\numphd{2}
+\def\nummasters{5}
+\def\numundergraduate{2}
+\def\numstudents{32}
+
+% Git version tracking
+%\input{vc}
+
+% Required style files
+\PassOptionsToPackage{hyphens}{url}\usepackage{url,fancyhdr}
+\PassOptionsToPackage{hyphens}{url}
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+
+% color for the links
+\usepackage[usenames,dvipsnames]{color}
+
+% import and customize urls
+\usepackage[usenames,dvipsnames]{color}
+
+
+
+\usepackage{natbib}
+\usepackage{bibentry}
+%\makeatletter\let\saved@bibitem\@bibitem\makeatother
+%\usepackage{hyperref}
+%\makeatletter\let\@bibitem\saved@bibitem\makeatother
+
+\usepackage[breaklinks]{hyperref}
+\hypersetup{colorlinks=true, linkcolor=Blue, citecolor=Black, filecolor=Blue, urlcolor=Blue, unicode=true}
+
+% customize the titles so that they appear in the right margin
+\usepackage{titlesec}
+
+\usepackage{amssymb}
+\setlength{\marginparwidth}{4.2in}
+\setlength{\titlewidth}{2.2in}
+
+\titleformat{\section}[leftmargin]
+{\normalfont
+\fontsize{12}{15}
+\sffamily\bfseries\filleft}
+{}{0pt}{\color{BrickRed}}
+\titlespacing{\section}
+{1.0in}{1.5ex}{1pc}
+\titleformat{\subsection}
+{\normalfont \bf}
+{}{0pt}{}
+\titlespacing{\subsection}
+{0em}{-1.2em}{0em}
+
+% create a special cvlist environment to format the items
+\newenvironment{cvlist}{
+\begin{list}{}{\leftmargin=3.0em \itemindent=-3.0em}
+  \setlength{\itemsep}{2pt}
+  \setlength{\parskip}{0em}
+  \setlength{\parsep}{0em}
+  \setlength{\parindent}{-1em}}
+{\vspace{0em}
+\end{list}}
+
+% set the default indent to nothing
+\setlength{\parindent}{0em}
+
+%\usepackage{afterpage}
+% \usepackage{endnotes}
+% \renewcommand\theendnote{\fnsymbol{endnote}}
+
+\begin{document}
+
+  \nobibliography{susmit_cv}
+  \bibliographystyle{alpha}
+
+
+
+% \baselineskip 12.5pt
+%% Name
+\noindent{\Large {\textsc{\textbf{Susmit Shannigrahi}}}}
+
+\medskip
+
+% Page layout
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyfoot{}
+
+\fancyfoot[RO,RE]{\thepage/\pageref{LastPage}}
+% number on all /subsequent/ pages
+%\afterpage{\rhead{{\scriptsize\thepage}}}
+
+
+% git revision control footer
+
+% Address and contact block
+
+\begin{minipage}[t]{3in}
+ \flushleft {\footnotesize
+   Computer Science Department,\\
+   Tennessee Technological University,\\
+   Room 331, Bruner Hall\\
+   Cookeville, TN 38505}
+   
+
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.0in}
+% dummy (needed here)
+\end{minipage}
+\hfill
+\begin{minipage}[t]{2in}
+  \flushright \footnotesize Phone: \href{tel:17403469028}{(+1) 740.346.9028} \\
+  Email: \href{mailto:sshannigrahi@tntech.edu}{sshannigrahi@tntech.edu} \\
+%  Personal Website: \href{\myweb}{\myweb}\\
+  Group Website: \href{\groupweb}{\groupweb}\\
+  Updated: \today\\
+  
+\end{minipage}
+
+\vspace{2em}
+
+\section{Research Interests}
+    Networks, Intelligent Cyberinfrastructure at scale, Distributed Systems, Large Scale Content Delivery, AI/ML for Networks and Systems 
+    
+\vspace{1em}
+\input{appointments}
+\vspace{-1em}
+\input{education}
+\vspace{0em}
+% research
+%\input{grants}
+% \vspace{1em}
+\input{grants-brief}
+\vspace{1em}
+\input{research-experiences}
+\vspace{1em}
+\input{publications}
+\vspace{1em}
+\input{teaching}
+\vspace{1em}
+\input{software}
+\vspace{1em}
+\input{infrastructure}
+\vspace{1em}
+\input{thesis}
+\vspace{1em}
+\input{tech_reports_whitepapers}
+\vspace{1em}
+\input{presentations}
+\vspace{1em}
+\input{invited_talks}
+\vspace{1em}
+\input{panels_workshops}
+% teaching
+
+% \vspace{1em}
+% \input{guest_lectures}
+
+\vspace{1em}
+\input{service}
+
+%service
+\vspace{1em}
+\input{reviews}
+
+\vspace{1em}
+\input{committee_member}
+\vspace{1em}
+
+% misc
+
+\input{awards}
+\vspace{1em}
+\input{news}
+\vspace{1em}
+\input{other_activities}
+\vspace{1em}
+
+%\input{references}
+
+
+
+
+\end{document}
+
+}

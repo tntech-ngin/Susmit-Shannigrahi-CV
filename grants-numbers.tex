@@ -1,0 +1,58 @@
+\FPeval{\TotalResearch}{clip(470384+276000+1025000+5000+100000+35000+16000+16000+973221)}
+\FPeval{\TntechResearchTotal}{clip(163230+276000+87499+18000+5000+6994+35000+16000+16000+300702)}
+
+\FPeval{\TotalTeaching}{clip(2250+1500+70000+8644)}
+\FPeval{\TntechTeachingTotal}{clip(2250+1500+50000+17384)}
+
+\FPeval{\TotalService}{clip(4443669)}
+\FPeval{\TntechServiceTotal}{clip(4443669)}
+
+
+\FPeval{\InternalResearch}{clip(10000)}
+\FPeval{\InternalTeaching}{clip(5000+79000)}
+\FPeval{\TotalAll}{clip(\TntechResearchTotal+\TntechTeachingTotal+\InternalResearch+\InternalTeaching)}
+
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+        Total External Research Grant: &  \$\num[group-separator={,}]{\TotalResearch} \\
+    \hline        
+        Total External Research Grant \textbf{(Tennessee Tech Portion)}: &  \$\num[group-separator={,}]{\TntechResearchTotal} \\
+    \hline
+    \hline
+        Total External Teaching Grant: &  \$\num[group-separator={,}]{\TotalTeaching} \\
+    \hline        
+        Total External Teaching Grant \textbf{(Tennessee Tech Portion)}: &  \$\num[group-separator={,}]{\TntechTeachingTotal} \\
+    \hline
+    \hline
+        Total Internal Research Grant: &  \$\num[group-separator={,}]{\InternalResearch}\\
+    \hline        
+        Total Internal Teaching Grant: &  \$\num[group-separator={,}]{\InternalTeaching}\\     
+    \hline 
+    \hline
+        \textbf{Total Amount (Tennessee Tech Portion):} &  \$\num[group-separator={,}]{\TotalAll}\\
+    \hline   
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+
+\hspace{2em}
+\subsection{Grants as Senior Personnel}
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+        
+    \hline
+        Total External Service Grant: &  \$\num[group-separator={,}]{\TotalService} \\
+    \hline        
+        Total External Service Grant \textbf{(Tennessee Tech Portion)}: &  \$\num[group-separator={,}]{\TntechServiceTotal} \\
+    \hline
+        \textbf{Total Amount (Tennessee Tech Portion):} &  \$\num[group-separator={,}]{\TntechServiceTotal}\\
+    \hline   
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
